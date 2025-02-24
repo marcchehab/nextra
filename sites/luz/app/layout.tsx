@@ -68,7 +68,14 @@ const navbar = (
         )}
       />
     }
-    projectLink="https://github.com/shuding/nextra"
+    // projectLink="https://github.com/shuding/nextra"
+    children={
+      <>
+        <Link href="/docs">Docs</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/about">About</Link>
+      </>
+    }
   />
 )
 const footer = (
@@ -98,7 +105,7 @@ const RootLayout: FC<{
       <Head />
       <body>
         <Layout
-          banner={banner}
+          // banner={banner}
           navbar={navbar}
           pageMap={pageMap}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"

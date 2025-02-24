@@ -16,7 +16,8 @@
     "module": "esnext",
     "resolveJsonModule": true,
     "paths": {
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@packages/*": ["../../packages/*"],
     },
     "plugins": [
       {
