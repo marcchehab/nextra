@@ -21,6 +21,13 @@ code.text-\[\.9em\] {
   font-size: 14px;
 }
 
+:root {
+  --bgbeam-fill: #f9f7f2;
+  &.light {
+      --bgbeam-fill: #ffd760;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .home-content .hide-medium {
     display: none;

@@ -19,6 +19,7 @@
     "release": "changeset publish",
     "test": "turbo run test",
     "types:check": "turbo run types:check",
+    "pullupdates": "git pull upstream main",
     "version": "changeset version"
   },
   "devDependencies": {

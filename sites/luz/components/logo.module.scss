@@ -1,0 +1,61 @@
+.svglogo {
+    height: 3rem;
+
+    .cls-1 {
+        fill: #6fb3f7;
+    }
+
+    .cls-1,
+    .cls-2,
+    .cls-3,
+    .cls-4,
+    .cls-5,
+    .cls-6,
+    .cls-7,
+    .cls-8,
+    .bgbeam,
+    .cls-10 {
+        stroke-width: 0px;
+    }
+
+    .cls-2 {
+        fill: #f8b297;
+    }
+
+    .cls-3 {
+        fill: #f7b293;
+    }
+
+    .cls-4 {
+        fill: #ea8e75;
+    }
+
+    .cls-5 {
+        fill: #d5a28d;
+    }
+
+    .cls-6 {
+        fill: #0256aa;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .cls-8 {
+        fill: #1c7bff;
+    }
+
+    .bgbeam {
+        opacity: 0.3;
+        fill: var(--bgbeam-fill);
+    }
+
+    .cls-10 {
+        fill: #fff;
+    }
+
+    .svglogo {
+        height: 4rem;
+    }
+}

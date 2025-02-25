@@ -1,15 +1,15 @@
-import { NextraLogo, VercelLogo } from '@components/icons'
 import cn from 'clsx'
 import type { Metadata } from 'next'
-import { Footer, Layout, Link, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
+import { Layout, Link, Navbar } from 'nextra-theme-docs'
+import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import type { FC, ReactNode } from 'react'
 import './globals.css'
+import Logo from '@components/logo'
 
 export const metadata: Metadata = {
-  description: 'Make beautiful websites with Next.js & MDX.',
-  metadataBase: new URL('https://nextra.site'),
+  description: '',
+  metadataBase: new URL('https://luz.to'),
   keywords: [
     'Nextra',
     'Next.js',
@@ -20,26 +20,26 @@ export const metadata: Metadata = {
     'Static Site Generator'
   ],
   generator: 'Next.js',
-  applicationName: 'Nextra',
+  applicationName: 'luz',
   appleWebApp: {
-    title: 'Nextra'
+    title: 'luz'
   },
   title: {
-    default: 'Nextra – Next.js Static Site Generator',
-    template: '%s | Nextra'
+    default: 'luz.to',
+    template: '%s | luz.to'
   },
   openGraph: {
     // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
     url: './',
-    siteName: 'Nextra',
-    locale: 'en_US',
+    siteName: 'luz.to',
+    locale: 'en_GB',
     type: 'website'
   },
   other: {
     'msapplication-TileColor': '#fff'
   },
   twitter: {
-    site: 'https://nextra.site'
+    site: 'https://luz.to'
   },
   alternates: {
     // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
@@ -47,19 +47,10 @@ export const metadata: Metadata = {
   }
 }
 
-const banner = (
-  <Banner dismissible={false}>
-    🎉 Nextra 4.0 is released. dimaMachina is looking{' '}
-    <Link href="https://github.com/dimaMachina">
-      for a new job or consulting
-    </Link>
-    .
-  </Banner>
-)
 const navbar = (
   <Navbar
     logo={
-      <NextraLogo
+      <Logo
         height="20"
         className={cn(
           'hover:transition-all hover:duration-1000 motion-reduce:hover:transition-none',
@@ -78,23 +69,6 @@ const navbar = (
     }
   />
 )
-const footer = (
-  <Footer className="flex-col items-center md:items-start">
-    <a
-      className="x:focus-visible:nextra-focus flex items-center gap-1"
-      target="_blank"
-      rel="noreferrer"
-      title="vercel.com homepage"
-      href="https://vercel.com?utm_source=nextra.site"
-    >
-      Powered by
-      <VercelLogo height="20" />
-    </a>
-    <p className="mt-6 text-xs">
-      © {new Date().getFullYear()} The Nextra Project.
-    </p>
-  </Footer>
-)
 
 const RootLayout: FC<{
   children: ReactNode
@@ -108,15 +82,16 @@ const RootLayout: FC<{
           // banner={banner}
           navbar={navbar}
           pageMap={pageMap}
-          docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
-          editLink="Edit this page on GitHub"
+          // docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
+          editLink={null}
+          feedback={{ content: null }}
           sidebar={{ defaultMenuCollapseLevel: 1 }}
-          footer={footer}
+          footer={<></>}
         >
           {children}
         </Layout>
       </body>
-    </html>
+    </html >
   )
 }
 
