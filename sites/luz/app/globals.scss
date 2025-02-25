@@ -1,0 +1,218 @@
+@use 'tailwindcss';
+@import 'nextra-theme-docs/style.css';
+
+body {
+    font-feature-settings:
+        'rlig' 1,
+        'calt' 1;
+}
+
+.home-content p {
+    margin-top: 1.5em;
+    line-height: 1.75em;
+}
+
+code.text-\[\.9em\] {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .home-content .hide-medium {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .home-content .hide-small {
+        display: none;
+    }
+}
+
+:root {
+    --color-accent-0: hsl(345, 94%, 58%);
+    --hue-base: 180;
+    --color-accent-1: hsl(var(--hue-base), 100%, 42%);
+    --color-accent-2: hsl(calc(var(--hue-base) + 20), 100%, 55%);
+    --color-accent-3: hsl(calc(var(--hue-base) + 80), 100%, 70%);
+    --color-accent-4: hsl(calc(var(--hue-base) + 120), 100%, 42%);
+    --color-accent-5: hsl(calc(var(--hue-base) + 160), 100%, 42%);
+    --color-accent-6: hsl(calc(var(--hue-base) + 200), 100%, 65%);
+    --ig-background: #fff;
+    --ig-text: #171717;
+
+    &.dark {
+        --color-accent-1: hsl(var(--hue-base), 100%, 50%);
+        --ig-background: #171717;
+        --ig-text: #fff;
+    }
+
+    --bgbeam-fill: #f9f7f2;
+
+    &.light {
+        --bgbeam-fill: #ffd760;
+    }
+}
+
+blockquote.callout,
+article main {
+    font-family: var(--main-font), serif;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--title-font), serif;
+    }
+
+    section.footnotes {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+}
+
+article {
+    h1 {
+        color: var(--color-accent-1);
+    }
+    h2 {
+        color: var(--color-accent-2);
+    }
+    h3 {
+        color: var(--color-accent-3);
+    }
+    h4 {
+        color: var(--color-accent-4);
+    }
+    h5 {
+        color: var(--color-accent-5);
+    }
+    h6 {
+        color: var(--color-accent-6);
+    }
+
+    :not(h3)>strong {
+        color: var(--color-accent-6) !important;
+    }
+
+    img:only-child {
+        margin: 0 auto;
+    }
+}
+
+
+figcaption {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+// Sidebar stuff
+.nextra-sidebar-container ._gap-2+div {
+    counter-reset: decCount;
+
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+
+        &::before {
+            width: 0px;
+        }
+    }
+
+    a.nextra-focus {
+        margin-left: 0.5rem;
+
+        &::before {
+            counter-increment: decCount;
+            content: counter(decCount);
+            flex-shrink: 0;
+            height: 1.25rem;
+            width: 1.25rem;
+            background-color: hsl(var(--nextra-primary-hue) var(--nextra-primary-saturation) var(--nextra-primary-lightness) / var(--tw-text-opacity));
+            color: white;
+            padding: 0.05rem;
+            margin-right: 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    li:not(.active) a.nextra-focus::before {
+        background-color: #77777788;
+    }
+}
+
+// Codeblock stuff
+.has-diff {
+    code>span {
+        padding-left: 40px;
+    }
+
+    .diff {
+        &::before {
+            color: var(--shiki-dark);
+            position: absolute;
+            left: 5px;
+        }
+
+        &.add {
+            background-color: rgb(59 215 47 / 30%);
+
+            &::before {
+                content: '+';
+            }
+        }
+
+        &.remove {
+            background-color: rgb(237 70 98 / 30%);
+
+            &::before {
+                content: '-';
+            }
+        }
+    }
+}
+
+// Excalidraw
+.excalidraw {
+    margin: 0 auto;
+}
+
+blockquote:not(.callout) {
+    border-left: 3px solid var(--color-accent-0);
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+// Todo list
+
+.contains-task-list {
+    font-weight: bold;
+    margin: 1rem;
+
+    .contains-task-list {
+        font-weight: normal;
+        margin: 0 1rem 1rem;
+    }
+
+    .task-list-item:has(> input[type="checkbox"]:checked) {
+        font-style: italic;
+        opacity: 0.7;
+    }
+}
+
+// Teaching notes
+.teachingnotes+p {
+    margin-right: 2rem;
+}

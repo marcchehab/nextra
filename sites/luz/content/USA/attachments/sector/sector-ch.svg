@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="exportSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 408" style="enable-background:new 0 0 600 408;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{clip-path:url(#SVGID_00000142151032209708720950000011619173059122540982_);}
+	.st2{clip-path:url(#SVGID_00000016794851155694755650000009748366137858369666_);}
+	.st3{fill:none;stroke:#757575;}
+	.st4{fill:none;stroke:#728CD7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{fill:none;stroke:#399D50;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st6{fill:none;stroke:#DC0018;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st7{fill:#FFFFFF;stroke:#728CD7;stroke-width:2;stroke-miterlimit:12;}
+	.st8{fill:#FFFFFF;stroke:#399D50;stroke-width:2;stroke-miterlimit:12;}
+	.st9{fill:#FFFFFF;stroke:#DC0018;stroke-width:2;stroke-miterlimit:12;}
+	.st10{fill:#757575;}
+	.st11{font-family:'Roboto-Regular';}
+	.st12{font-size:12px;}
+	.st13{fill:none;stroke:#757575;stroke-linecap:square;}
+	.st14{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;}
+	.st15{fill:#333333;}
+	.st16{clip-path:url(#SVGID_00000001659755817908354360000005053223972316126353_);}
+	.st17{fill:none;stroke:#399D50;stroke-width:2;stroke-linecap:round;}
+	.st18{fill:none;stroke:#728CD7;stroke-width:2;stroke-linecap:round;}
+	.st19{fill:none;stroke:#DC0018;stroke-width:2;stroke-linecap:round;}
+</style>
+<rect y="0" class="st0" width="600" height="408"/>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" y="0" width="600" height="408"/>
+		</defs>
+		<clipPath id="SVGID_00000082365931141887117570000013459948670858270124_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="__svelte-dw-svg" style="clip-path:url(#SVGID_00000082365931141887117570000013459948670858270124_);">
+			<g id="chart-svg">
+				<g>
+					<defs>
+						<rect id="SVGID_00000150798443819199381060000008362067535439247239_" y="42" width="600" height="302"/>
+					</defs>
+					<clipPath id="SVGID_00000097466648642434192940000005244806272469676972_">
+						<use xlink:href="#SVGID_00000150798443819199381060000008362067535439247239_"  style="overflow:visible;"/>
+					</clipPath>
+					
+						<g id="svg-main-svg" transform="translate(0, 42)" style="clip-path:url(#SVGID_00000097466648642434192940000005244806272469676972_);">
+						<g id="group-svg" transform="translate(28.47656, 43)">
+							<g id="x-grid-svg">
+							</g>
+							<g id="y-grid-svg">
+								<g id="y-grid-lines-svg_grid-y-svg_datawrapper-7O5oG-y8bxha-svg">
+									<line class="st3" x1="0" y1="0" x2="538.5" y2="0"/>
+									<line class="st3" x1="0" y1="29.2" x2="538.5" y2="29.2"/>
+									<line class="st3" x1="0" y1="58.5" x2="538.5" y2="58.5"/>
+									<line class="st3" x1="0" y1="87.7" x2="538.5" y2="87.7"/>
+									<line class="st3" x1="0" y1="117" x2="538.5" y2="117"/>
+									<line class="st3" x1="0" y1="146.2" x2="538.5" y2="146.2"/>
+									<line class="st3" x1="0" y1="175.5" x2="538.5" y2="175.5"/>
+									<line class="st3" x1="0" y1="204.7" x2="538.5" y2="204.7"/>
+								</g>
+							</g>
+							<g id="area-fills-svg">
+							</g>
+							<g id="lines-svg">
+								<g id="Sekundärer-svg_Sektor-svg">
+									<path id="Sekundärer_Sektor" class="st4" d="M9.6,109.3l31.9,1.9l31.9-3.4l25.5,7.4l38.2-8.8l31.9-1.5l31.9,3.6l31.9-2.3
+										l35,1.4l28.7-8.8l31.9-7l3.2,2.4l3.2-2.5l3.2-0.6l3.2,0.1l3.2,1.2l3.2,1.6l3.2,1.8l3.2,1.1l3.2,0.9L360,99l3.2,0.5l3.2,1.3
+										l3.2,1.6l3.2,1.5l3.2,11.8l3.2,3.6l3.2,1.1l3.2,1l3.2,1.2l3.2,0.1l3.2,0.8l3.2,2.7l3.2,2.7l3.2,0.9l3.2,0.4l3.2,0.9
+										l3.2,2.6l3.2,2.4l3.2,1.7l3.2,2.4l3.2,7.8l3.2,2.5l3.2,2.3l3.2,1.5l3.2,0.8l3.2,2.4l3.2,2.3l3.2,1.9l3.2,1.8l3.2,0.7
+										l3.2,0.1l3.2,1.5l3.2,0.8l3.2,0.5l3.2,0l3.2-0.4l3.2-0.2l3.2,0.6l3.2,1l3.2,0.5l3.2,0.1l3.2,0.7l3.2,1.2l3.2,0.4l3.2,0.6
+										l3.2,1.2l3.2,0.5l3.2,0.3l3.2,0l3.2,0.2l3.2,0.9l3.2,0.3l3.2,0.5"/>
+								</g>
+								<g id="Primärer-svg_Sektor-svg">
+									<path id="Primärer_Sektor" class="st5" d="M9.6,97.5l31.9,0.6l31.9,13.1l25.5,13.2l38.2,18.9l31.9,12.3l31.9,2.8
+										l31.9,13.2l35,1.3l28.7,12.7l31.9,9.4l3.2-0.3l3.2,2.8l3.2,2.5l3.2,1.9l3.2,1.3l3.2,0.9l3.2,0.5l3.2,1.8l3.2,1.5l3.2,1.1
+										l3.2,1l3.2,1l3.2,0.9l3.2,0.3l3.2-0.3l3.2-0.4l3.2,0.6l3.2,0.7l3.2,0.5l3.2,0.7l3.2,0.9l3.2,0.3l3.2,0.2l3.2,0.5l3.2,0.5
+										l3.2,1.1l3.2,1l3.2,1.2l3.2,1.1l3.2,0.9l3.2,0.5l3.2,0.1l3.2-0.6l3.2,0.2l3.2,0.1l3.2-0.8l3.2,0l3.2,0.1l3.2-0.1l3.2,0.8
+										l3.2,0.9l3.2,0l3.2,0.1l3.2,0.6l3.2,0.1l3.2,0.2l3.2-0.1l3.2,0.1l3.2,0.5l3.2-0.4l3.2-0.1l3.2,0.1l3.2,0l3.2-0.2l3.2,0.4
+										l3.2,0.2l3.2,0.6l3.2,0.3l3.2,1.2l3.2,0l3.2,0.7l3.2,0.5l3.2-0.3"/>
+								</g>
+								<g id="Tertiärer-svg_Sektor-svg">
+									<path id="Tertiärer_Sektor" class="st6" d="M9.6,202.6l31.9-2.5l31.9-9.7l25.5-20.6l38.2-10.1l31.9-10.8l31.9-6.5
+										l31.9-10.9l35-2.8l28.7-3.9l31.9-2.4l3.2-2.1l3.2-0.3l3.2-1.9l3.2-2l3.2-2.5l3.2-2.4l3.2-2.3l3.2-2.8l3.2-2.3l3.2-2.3
+										l3.2-1.5l3.2-2.3l3.2-2.5l3.2-1.8L376,82l3.2-3.1l3.2-1.6l3.2-1.6l3.2-1.6l3.2-0.8l3.2-1.7l3.2-3.1l3.2-2.9l3.2-1.4
+										l3.2-0.8l3.2-2l3.2-3.6l3.2-3.6l3.2-2.8l3.2-3.2l3.2-8.3l3.2-2.7l3.2-1.6l3.2-1.8l3.2-0.9l3.2-1.6l3.2-2.3l3.2-1.9l3.2-1.6
+										l3.2-1.5l3.2-1.1l3.2-1.5l3.2-1l3.2-1.1l3.2-0.1l3.2,0.2l3.2,0.4l3.2-0.8l3.2-1.5l3.2-0.1l3.2,0l3.2-0.8l3.2-1.2l3.2-0.2
+										l3.2-1l3.2-1.5l3.2-1.2L513,11l3.2-1.2l3.2-0.2l3.2-1.6l3.2-0.7l3.2-0.2"/>
+								</g>
+							</g>
+							<g id="line-symbols-svg">
+								<path class="st7" d="M531.9,175.2c0,1.7-1.3,3-3,3s-3-1.3-3-3s1.3-3,3-3S531.9,173.6,531.9,175.2"/>
+								<path class="st8" d="M531.9,227.2c0,1.7-1.3,3-3,3s-3-1.3-3-3s1.3-3,3-3S531.9,225.6,531.9,227.2"/>
+								<path class="st9" d="M531.9,7c0,1.7-1.3,3-3,3s-3-1.3-3-3s1.3-3,3-3S531.9,5.4,531.9,7"/>
+							</g>
+							<g id="lbl-connect-lines-svg">
+							</g>
+							<g id="x-grid-svg_00000167363112856255455270000006130912907941452700_">
+								<g id="x-tick-labels-svg_date-axis-svg_grid-x-svg_datawrapper-7O5oG-6boht-svg" transform="translate(0, 244)">
+									<text transform="matrix(1 0 0 1 -3.8347 12)" class="st10 st11 st12">1860</text>
+									<text transform="matrix(1 0 0 1 59.8765 12)" class="st10 st11 st12">1880</text>
+									<text transform="matrix(1 0 0 1 123.5877 12)" class="st10 st11 st12">1900</text>
+									<text transform="matrix(1 0 0 1 187.2902 12)" class="st10 st11 st12">1920</text>
+									<text transform="matrix(1 0 0 1 251.0013 12)" class="st10 st11 st12">1940</text>
+									<text transform="matrix(1 0 0 1 314.7125 12)" class="st10 st11 st12">1960</text>
+									<text transform="matrix(1 0 0 1 378.4237 12)" class="st10 st11 st12">1980</text>
+									<text transform="matrix(1 0 0 1 442.1349 12)" class="st10 st11 st12">2000</text>
+									<text transform="matrix(1 0 0 1 515.405 12)" class="st10 st11 st12">2023</text>
+								</g>
+								<g id="x-tick-lines-svg_grid-x-svg_datawrapper-7O5oG-cg45gq-svg" transform="translate(0, 234)">
+									<line class="st3" x1="9.6" y1="5" x2="9.6" y2="0"/>
+									<line class="st3" x1="73.4" y1="5" x2="73.4" y2="0"/>
+									<line class="st3" x1="137.1" y1="5" x2="137.1" y2="0"/>
+									<line class="st3" x1="200.8" y1="5" x2="200.8" y2="0"/>
+									<line class="st3" x1="264.5" y1="5" x2="264.5" y2="0"/>
+									<line class="st3" x1="328.2" y1="5" x2="328.2" y2="0"/>
+									<line class="st3" x1="391.9" y1="5" x2="391.9" y2="0"/>
+									<line class="st3" x1="455.6" y1="5" x2="455.6" y2="0"/>
+									<line class="st3" x1="528.9" y1="5" x2="528.9" y2="0"/>
+								</g>
+							</g>
+							<g id="y-grid-svg_00000023250469073701499580000006379481682966139520_">
+								<g id="y-tick-labels-svg_number-axis-svg_grid-y-svg_datawrapper-7O5oG-fsuucl-svg" transform="translate(-5, 0)">
+									<text transform="matrix(1 0 0 1 -15.5273 238)" class="st10 st11 st12">0%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 208.75)" class="st10 st11 st12">10%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 179.5)" class="st10 st11 st12">20%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 150.25)" class="st10 st11 st12">30%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 121)" class="st10 st11 st12">40%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 91.75)" class="st10 st11 st12">50%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 62.5)" class="st10 st11 st12">60%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 33.25)" class="st10 st11 st12">70%</text>
+									<text transform="matrix(1 0 0 1 -22.2656 4)" class="st10 st11 st12">80%</text>
+								</g>
+								<g id="y-base-lines-svg_grid-y-svg_datawrapper-7O5oG-l0t1pf-svg">
+									<line class="st13" x1="538.5" y1="234" x2="0" y2="234"/>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+				<text transform="matrix(1 0 0 1 24 50.5937)" class="st10 st11 st12">Agriculture</text>
+				<text transform="matrix(1 0 0 1 148.2188 50.5937)" class="st10 st11 st12">Industrial</text>
+				<text transform="matrix(1 0 0 1 286.9375 50.5937)" class="st10 st11 st12">Service</text>
+				<g id="_x32_0_x2C_1-svg">
+					<text transform="matrix(1 0 0 1 566.9844 267.2344)" class="st11 st12">20,1</text>
+					<text transform="matrix(1 0 0 1 566.9844 267.2344)" class="st14 st11 st12">20,1</text>
+					<text transform="matrix(1 0 0 1 566.9844 267.2344)" class="st15 st11 st12">20,1</text>
+				</g>
+				<g id="_x32__x2C_3-svg">
+					<text transform="matrix(1 0 0 1 566.9844 319.2344)" class="st11 st12">2,3</text>
+					<text transform="matrix(1 0 0 1 566.9844 319.2344)" class="st14 st11 st12">2,3</text>
+					<text transform="matrix(1 0 0 1 566.9844 319.2344)" class="st15 st11 st12">2,3</text>
+				</g>
+				<g id="_x37_7_x2C_6-svg">
+					<text transform="matrix(1 0 0 1 566.9844 99.0156)" class="st11 st12">77,6</text>
+					<text transform="matrix(1 0 0 1 566.9844 99.0156)" class="st14 st11 st12">77,6</text>
+					<text transform="matrix(1 0 0 1 566.9844 99.0156)" class="st15 st11 st12">77,6</text>
+				</g>
+				<g>
+					<defs>
+						<rect id="SVGID_00000089574096303527612630000008455160216010097309_" y="42" width="600" height="302"/>
+					</defs>
+					<clipPath id="SVGID_00000127037860480921188330000015887238834812889738_">
+						<use xlink:href="#SVGID_00000089574096303527612630000008455160216010097309_"  style="overflow:visible;"/>
+					</clipPath>
+					
+						<g id="tooltip-layer-svg" transform="translate(0, 42)" style="clip-path:url(#SVGID_00000127037860480921188330000015887238834812889738_);">
+						<g id="group-svg_00000109713380843796539420000004671245199954075048_" transform="translate(28.47656, 43)">
+						</g>
+					</g>
+				</g>
+				<g id="legend-color-svg" transform="translate(0, 36)">
+					<line class="st17" x1="1" y1="10" x2="15" y2="10"/>
+				</g>
+				<g id="legend-color-svg_00000002364218101128657310000001936799928597664138_" transform="translate(124.21875, 36)">
+					<line class="st18" x1="1" y1="10" x2="15" y2="10"/>
+				</g>
+				<g id="legend-color-svg_00000031889259370302733290000005838891530019710372_" transform="translate(262.9375, 36)">
+					<line class="st19" x1="1" y1="10" x2="15" y2="10"/>
+				</g>
+			</g>
+			<g id="container-svg_container-footer-svg_datawrapper-7O5oG-3wgd9y-svg">
+				<text transform="matrix(1 0 0 1 0 373)" class="st15 st11 st12">Datenstand:</text>
+				<text transform="matrix(1 0 0 1 67.209 373)" class="st15 st11 st12">19.09.2024</text>
+				<text transform="matrix(1 0 0 1 493.377 373)" class="st15 st11 st12">gr-d-03.02.02.04a-je</text>
+				<text transform="matrix(1 0 0 1 0 389)" class="st15 st11 st12">Quelle:</text>
+				<text transform="matrix(1 0 0 1 39.2949 389)" class="st15 st11 st12">BFS – Eidgenössische Volkszählung (VZ bis 1960),</text>
+				<text transform="matrix(1 0 0 1 0 405)" class="st15 st11 st12">Erwerbstätigenstatistik (ETS ab 1961)</text>
+				<text transform="matrix(1 0 0 1 536.4219 389)" class="st15 st11 st12">©</text>
+				<text transform="matrix(1 0 0 1 548.834 389)" class="st15 st11 st12">BFS 2024</text>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

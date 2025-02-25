@@ -4,20 +4,36 @@ import { Layout, Link, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import type { FC, ReactNode } from 'react'
-import './globals.css'
+import './globals.scss'
 import Logo from '@components/logo'
+import { Roboto_Slab, Barlow_Condensed } from 'next/font/google'
+
+const mainFont = Roboto_Slab({
+  subsets: ['latin'],
+  weight: '200',
+  variable: '--main-font'
+})
+
+const titleFont = Barlow_Condensed({
+  subsets: ['latin'],
+  weight: '700',
+  variable: '--title-font'
+})
 
 export const metadata: Metadata = {
   description: '',
   metadataBase: new URL('https://luz.to'),
   keywords: [
-    'Nextra',
-    'Next.js',
-    'React',
-    'JavaScript',
-    'MDX',
-    'Markdown',
-    'Static Site Generator'
+    'luz',
+    'politics',
+    'news',
+    'current affairs',
+    'analysis',
+    'switzerland',
+    'europe',
+    'uk',
+    'ukraine',
+    'russia'
   ],
   generator: 'Next.js',
   applicationName: 'luz',
@@ -75,7 +91,8 @@ const RootLayout: FC<{
 }> = async ({ children }) => {
   const pageMap = await getPageMap()
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning className={cn(mainFont.variable, titleFont.variable)}
+    >
       <Head />
       <body>
         <Layout

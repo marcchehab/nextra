@@ -48,7 +48,7 @@ const rehypeOpenGraphImage = () => ast => {
   }
   const [prop] = createAstObject({
     openGraph: createAstObject({
-      images: `https://nextra.site/og?title=${title}`
+      images: `https://luz.to/og?title=${title}`
     })
   }).properties
   properties.push(prop)
@@ -57,6 +57,7 @@ const rehypeOpenGraphImage = () => ast => {
 const withNextra = nextra({
   latex: true,
   defaultShowCopyCode: true,
+  // contentDirBasePath: '/luz_content',
   mdxOptions: {
     rehypePlugins: [
       // Provide only on `build` since turbopack on `dev` supports only serializable values
@@ -73,41 +74,6 @@ const nextConfig = withNextra({
     ignoreDuringBuilds: true
   },
   redirects: async () => [
-    {
-      source: '/docs/guide/:slug(typescript|latex|tailwind-css|mermaid)',
-      destination: '/docs/advanced/:slug',
-      permanent: true
-    },
-    {
-      source: '/docs/docs-theme/built-ins/:slug(callout|steps|tabs|bleed)',
-      destination: '/docs/built-ins/:slug',
-      permanent: true
-    },
-    {
-      source: '/docs/docs-theme/api/use-config',
-      destination: '/docs/docs-theme/api',
-      permanent: true
-    },
-    {
-      source: '/docs/guide/advanced/:slug',
-      destination: '/docs/advanced/:slug',
-      permanent: true
-    },
-    {
-      source: '/docs/docs-theme/theme-configuration',
-      destination: '/docs/docs-theme/built-ins/layout',
-      permanent: true
-    },
-    {
-      source: '/docs/docs-theme/page-configuration',
-      destination: '/docs/file-conventions/meta-file',
-      permanent: true
-    },
-    {
-      source: '/docs/guide/organize-files',
-      destination: '/docs/file-conventions',
-      permanent: true
-    }
   ],
   webpack(config) {
     // rule.exclude doesn't work starting from Next.js 15

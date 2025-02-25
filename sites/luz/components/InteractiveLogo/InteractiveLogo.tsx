@@ -1,7 +1,7 @@
+"use client"
+
 /* eslint-disable unicorn/no-array-for-each */
 import cn from 'clsx'
-import dynamic from 'next/dynamic'
-import { useRouter } from 'nextra/hooks'
 import { useEffect, useRef, useState } from 'react'
 import styles from './InteractiveLogo.module.scss'
 import { partycolors } from './partyColors'
@@ -9,8 +9,8 @@ import { partycolors } from './partyColors'
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 declare let confetti: any
 
-const InteractiveLogoComponent = () => {
-    const isDe = useRouter().locale === 'de'
+export const InteractiveLogo = () => {
+    const isDe = false
     const currentRiddleName = 'firstriddle'
     const [solvedBefore, setSolvedBefore] = useState(
         localStorage.getItem(currentRiddleName) !== null
@@ -50,6 +50,11 @@ const InteractiveLogoComponent = () => {
             instructionsRef.current!.textContent = ''
         }, time)
     }
+
+    useEffect(() => {
+        if (solvedBefore) return
+        displayInstruction('Help me turn on the lights 😎!', 5000)
+    }, [])
 
     const party = async () => {
         partying.current = true
@@ -520,10 +525,3 @@ const InteractiveLogoComponent = () => {
     )
 }
 
-// Dynamic import to disable SSR
-export const InteractiveLogo = dynamic(
-    () => Promise.resolve(InteractiveLogoComponent),
-    { ssr: false }
-)
-
-export default InteractiveLogo
