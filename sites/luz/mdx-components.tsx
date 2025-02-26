@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
+import { CoolTitle } from '@components/CoolTitle'
 
 import { useMDXComponents as getDocsMDXComponents } from 'nextra-theme-docs'
 
@@ -15,6 +16,7 @@ export const useMDXComponents: typeof getDocsMDXComponents = components => ({
   ...docsComponents,
   tr: Tr,
   th: Th,
+  h1: CoolTitle,
   thead({ children, ...props }) {
     return (
       <thead {...props}>
