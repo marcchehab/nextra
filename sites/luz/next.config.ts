@@ -1,5 +1,6 @@
 import nextra from 'nextra'
 import { preprocessWikilinks } from '@lib/preprocess-wiki-links'
+import { remarkExcalidraw } from './lib/remark-excalidraw'
 
 function isExportNode(node, varName: string) {
   if (node.type !== 'mdxjsEsm') return false
@@ -62,6 +63,7 @@ const withNextra = nextra({
   mdxOptions: {
     format: 'mdx',
     preprocessors: [preprocessWikilinks],
+    remarkPlugins: [remarkExcalidraw],
     rehypePlugins: [
       // Provide only on `build` since turbopack on `dev` supports only serializable values
       process.env.NODE_ENV === 'production' && rehypeOpenGraphImage

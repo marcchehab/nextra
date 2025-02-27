@@ -3,6 +3,7 @@
 import { CoolTitle } from '@components/CoolTitle'
 
 import { useMDXComponents as getDocsMDXComponents } from 'nextra-theme-docs'
+import { Excalidraw } from '@components/Excalidraw'
 
 const {
   tr: Tr,
@@ -17,6 +18,7 @@ export const useMDXComponents: typeof getDocsMDXComponents = components => ({
   tr: Tr,
   th: Th,
   h1: CoolTitle,
+  excalidraw: Excalidraw,
   thead({ children, ...props }) {
     return (
       <thead {...props}>
