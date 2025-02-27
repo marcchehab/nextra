@@ -85,9 +85,17 @@ export async function compileMdx(
     remarkPlugins,
     rehypePlugins,
     recmaPlugins,
+    preprocessors,
     rehypePrettyCodeOptions,
     providerImportSource = 'next-mdx-import-source-file'
   } = mdxOptions
+
+  for (const preprocessor of preprocessors ?? []) {
+    source = preprocessor({
+      filePath,
+      fileContent: source
+    });
+  }
 
   const format =
     _format === 'detect' ? (filePath.endsWith('.mdx') ? 'mdx' : 'md') : _format
@@ -100,7 +108,7 @@ export async function compileMdx(
     !useCachedCompiler || isRemoteContent
       ? createCompiler()
       : (cachedCompilerForFormat[`${format}:${isPageImport}`] ||=
-          createCompiler())
+        createCompiler())
   const processor = compiler()
 
   try {
@@ -143,11 +151,11 @@ export async function compileMdx(
         [remarkAssignFrontMatter, { lastCommitTime }] satisfies Pluggable,
         remarkGfm,
         format !== 'md' &&
-          ([
-            remarkMdxDisableExplicitJsx,
-            // Replace the <summary> and <details> with customized components
-            { whiteList: ['details', 'summary', ...whiteListTagsStyling] }
-          ] satisfies Pluggable),
+        ([
+          remarkMdxDisableExplicitJsx,
+          // Replace the <summary> and <details> with customized components
+          { whiteList: ['details', 'summary', ...whiteListTagsStyling] }
+        ] satisfies Pluggable),
         [remarkHeadings, { isRemoteContent }] satisfies Pluggable,
         staticImage && remarkStaticImage,
         latex && remarkMath,
@@ -175,24 +183,24 @@ export async function compileMdx(
         [rehypeParseCodeMeta, { defaultShowCopyCode }],
         // Should be before `rehypePrettyCode`
         latex &&
-          (typeof latex === 'object'
-            ? latex.renderer === 'mathjax'
-              ? [rehypeBetterReactMathjax, latex.options, isRemoteContent]
-              : [rehypeKatex, latex.options]
-            : rehypeKatex),
+        (typeof latex === 'object'
+          ? latex.renderer === 'mathjax'
+            ? [rehypeBetterReactMathjax, latex.options, isRemoteContent]
+            : [rehypeKatex, latex.options]
+          : rehypeKatex),
         ...(codeHighlight === false
           ? []
           : [
-              [
-                rehypePrettyCode,
-                {
-                  ...DEFAULT_REHYPE_PRETTY_CODE_OPTIONS,
-                  ...rehypePrettyCodeOptions
-                }
-              ] as any,
-              rehypeTwoslashPopup,
-              [rehypeAttachCodeMeta, { search }]
-            ]),
+            [
+              rehypePrettyCode,
+              {
+                ...DEFAULT_REHYPE_PRETTY_CODE_OPTIONS,
+                ...rehypePrettyCodeOptions
+              }
+            ] as any,
+            rehypeTwoslashPopup,
+            [rehypeAttachCodeMeta, { search }]
+          ]),
         rehypeExtractTocContent
       ].filter(v => !!v),
       recmaPlugins: [
