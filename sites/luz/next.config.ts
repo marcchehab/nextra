@@ -1,6 +1,6 @@
 import nextra from 'nextra'
-import { preprocessWikilinks } from '@lib/preprocess-wiki-links'
-import { remarkExcalidraw } from './lib/remark-excalidraw'
+import { remarkWikiLinks, remarkExcalidraw, remarkPathCorrections } from '@lib'
+import type { Pluggable } from 'unified'
 
 function isExportNode(node, varName: string) {
   if (node.type !== 'mdxjsEsm') return false
@@ -62,8 +62,14 @@ const withNextra = nextra({
   // contentDirBasePath: '/luz_content',
   mdxOptions: {
     format: 'mdx',
-    preprocessors: [preprocessWikilinks],
-    remarkPlugins: [remarkExcalidraw],
+    preprocessors: [
+      // preprocessWikilinks
+    ],
+    remarkPlugins: [
+      remarkWikiLinks,
+      remarkExcalidraw, // before remarkPathCorrections
+      // remarkPathCorrections satisfies Pluggable
+    ],
     rehypePlugins: [
       // Provide only on `build` since turbopack on `dev` supports only serializable values
       process.env.NODE_ENV === 'production' && rehypeOpenGraphImage
