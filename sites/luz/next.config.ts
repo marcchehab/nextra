@@ -1,5 +1,5 @@
 import nextra from 'nextra'
-import { remarkRegexTransform } from '@lib/remark-regex-transforms'
+import { preprocessWikilinks } from '@lib/preprocess-wiki-links'
 
 function isExportNode(node, varName: string) {
   if (node.type !== 'mdxjsEsm') return false
@@ -61,6 +61,7 @@ const withNextra = nextra({
   // contentDirBasePath: '/luz_content',
   mdxOptions: {
     format: 'mdx',
+    preprocessors: [preprocessWikilinks],
     rehypePlugins: [
       // Provide only on `build` since turbopack on `dev` supports only serializable values
       process.env.NODE_ENV === 'production' && rehypeOpenGraphImage
