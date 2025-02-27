@@ -1,4 +1,5 @@
 import nextra from 'nextra'
+import { remarkRegexTransform } from '@lib/remark-regex-transforms'
 
 function isExportNode(node, varName: string) {
   if (node.type !== 'mdxjsEsm') return false
@@ -59,6 +60,7 @@ const withNextra = nextra({
   defaultShowCopyCode: true,
   // contentDirBasePath: '/luz_content',
   mdxOptions: {
+    format: 'mdx',
     rehypePlugins: [
       // Provide only on `build` since turbopack on `dev` supports only serializable values
       process.env.NODE_ENV === 'production' && rehypeOpenGraphImage

@@ -19,6 +19,7 @@
       "@/*": ["./*"],
       "@components/*": ["components/*"],
       "@packages/*": ["../../packages/*"],
+      "@lib/*": ["lib/*"],
     },
     "plugins": [
       {

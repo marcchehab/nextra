@@ -12,7 +12,7 @@ title: Test File
 Testing this. Also with *some* **formatting** and so on.
 
 
-[[test2]]
+[[test]]
 [[index|back to the roots]]
 
-asdfa 
+asdfas

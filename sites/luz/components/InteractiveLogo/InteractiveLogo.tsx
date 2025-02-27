@@ -12,15 +12,18 @@ declare let confetti: any
 export const InteractiveLogo = () => {
     const isDe = false
     const currentRiddleName = 'firstriddle'
-    const [solvedBefore, setSolvedBefore] = useState(
-        localStorage.getItem(currentRiddleName) !== null
-    )
+    const [solvedBefore, setSolvedBefore] = useState(false)
     const partying = useRef(false)
     const instructionsRef = useRef<HTMLDivElement>(null)
 
     const [l, setL] = useState(true)
     const [u, setU] = useState(false)
     const [z, setZ] = useState(false)
+
+    useEffect(() => {
+        setSolvedBefore(typeof window !== 'undefined' && window.localStorage && 
+            window.localStorage.getItem(currentRiddleName) !== null)
+    }, [currentRiddleName])
 
     const toggleLight = (light: string) => {
         if (light == 'l') {
@@ -54,7 +57,7 @@ export const InteractiveLogo = () => {
     useEffect(() => {
         if (solvedBefore) return
         displayInstruction('Help me turn on the lights 😎!', 5000)
-    }, [])
+    }, [solvedBefore])
 
     const party = async () => {
         partying.current = true
@@ -66,7 +69,7 @@ export const InteractiveLogo = () => {
         script.src = src
         script.onload = async () => {
             const canvas = document.createElement('canvas')
-            canvas.className = styles.confettiCanvas
+            canvas.className = styles.confettiCanvas ?? ''
             document.body.appendChild(canvas)
 
             if (!canvas || typeof window === 'undefined') return
@@ -92,7 +95,7 @@ export const InteractiveLogo = () => {
                 const randColor =
                     partycolors[Math.floor(Math.random() * partycolors.length)]
                 light.querySelectorAll('path').forEach(path => {
-                    path.style.fill = randColor
+                    path.style.fill = randColor ?? ''
                 })
             })
             countSwitches++
@@ -100,7 +103,9 @@ export const InteractiveLogo = () => {
         }
         // Afterparty
         partying.current = false
-        localStorage.setItem(currentRiddleName, 'true')
+        if (typeof window !== 'undefined' && window.localStorage) {
+            window.localStorage.setItem(currentRiddleName, 'true')
+        }
         setSolvedBefore(true)
     }
 
